@@ -92,10 +92,10 @@ An automated reporting tool that aggregates data from multiple Google Sheets acr
 - Flexible header matching with alias support (handles spacing/casing variations across different team members' sheets)
 - Smart date parsing for date fields without year information, with worksheet-title fallback
 - Generates four dashboard tabs:
-  - **Monthly Summary** — Request volume and approval rates by month
-  - **Reason Summary** — Breakdown of request reasons with approval metrics
-  - **Reason by Month** — Cross-tabulation for trend analysis
-  - **Data Quality Issues** — Automatic logging of parsing errors for data stewardship
+  - **Monthly Summary** - Request volume and approval rates by month
+  - **Reason Summary** - Breakdown of request reasons with approval metrics
+  - **Reason by Month** - Cross-tabulation for trend analysis
+  - **Data Quality Issues** - Automatic logging of parsing errors for data stewardship
 - Retry logic with exponential backoff for API resilience
 - Writes results back to a designated Dashboard spreadsheet automatically
 
@@ -107,13 +107,13 @@ An automated reporting tool that aggregates data from multiple Google Sheets acr
 
 My automation philosophy centers on a few principles:
 
-1. **Configuration over code changes** — Business rules, column mappings, and thresholds are defined in dataclasses and config objects, not hardcoded. This means analysts can adjust parameters without modifying logic.
+1. **Configuration over code changes** - Business rules, column mappings, and thresholds are defined in dataclasses and config objects, not hardcoded. This means analysts can adjust parameters without modifying logic.
 
-2. **GUI for accessibility** — Every automation that is used by non-technical team members gets a Tkinter GUI. Complexity is hidden behind simple Browse/Run interfaces.
+2. **GUI for accessibility** - Every automation that is used by non-technical team members gets a Tkinter GUI. Complexity is hidden behind simple Browse/Run interfaces.
 
-3. **Audit trail by default** — Every processing run generates summary files (JSON or CSV), timestamps outputs, and archives inputs. This supports compliance and makes troubleshooting straightforward.
+3. **Audit trail by default** - Every processing run generates summary files (JSON or CSV), timestamps outputs, and archives inputs. This supports compliance and makes troubleshooting straightforward.
 
-4. **Fail gracefully** — Files that fail processing are moved to separate error directories rather than blocking the entire batch. Data quality issues are logged, not silently dropped.
+4. **Fail gracefully** - Files that fail processing are moved to separate error directories rather than blocking the entire batch. Data quality issues are logged, not silently dropped.
 
 ---
 
