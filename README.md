@@ -1,6 +1,6 @@
 # Business Process Automation Portfolio
 
-**Role:** Business Analyst | Process Automation Specialist
+**Role:** Project Operations | Process Automation Specialist
 
 ---
 
