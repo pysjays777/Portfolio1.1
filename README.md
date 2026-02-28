@@ -6,7 +6,7 @@
 
 ## About Me
 
-I am a person who deep diving into Automation with hands-on experience in designing and building automation solutions that streamline operational workflows. My work focuses on identifying repetitive, manual processes and transforming them into reliable, scalable automation tools — reducing processing time, minimizing human error, and freeing up teams to focus on higher-value analysis.
+Operations professional with hands-on experience designing and building automation solutions that streamline business workflows. My work focuses on identifying repetitive, manual processes and transforming them into reliable, scalable automation tools, reducing processing time, minimizing human error, and freeing up teams to focus on higher-value analysis.
 
 I bridge the gap between business requirements and technical implementation. While my primary role involves stakeholder communication, requirements gathering, and process mapping, I also develop working prototypes and production-ready automation scripts using Python and Google Workspace APIs.
 
