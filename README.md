@@ -1,6 +1,6 @@
 # Business Process Automation Portfolio
 
-**Role:** Project Operations | Process Automation Specialist
+**Role:** Pricing Operations | Process Automation Specialist
 
 ---
 
@@ -14,11 +14,11 @@ I bridge the gap between business requirements and technical implementation. Whi
 
 ## Core Competencies
 
-- **Process Analysis & Optimization** — Mapping end-to-end business workflows, identifying bottlenecks, and designing automation strategies
-- **Data Wrangling & Transformation** — Processing large-scale CSV/Excel datasets with pandas, handling data quality issues, and building validation pipelines
-- **Desktop Tool Development** — Building user-friendly GUI applications (Tkinter) so non-technical team members can run automation independently
-- **Google Workspace Integration** — Automating Google Sheets and Google Drive operations via service accounts and APIs for real-time reporting
-- **Rule-Based Decision Engines** — Designing configurable rule engines that encode business logic for automated record classification and routing
+- **Process Analysis & Optimization** - Mapping end-to-end business workflows, identifying bottlenecks, and designing automation strategies
+- **Data Wrangling & Transformation** - Processing large-scale CSV/Excel datasets with pandas, handling data quality issues, and building validation pipelines
+- **Desktop Tool Development** - Building user-friendly GUI applications (Tkinter) so non-technical team members can run automation independently
+- **Google Workspace Integration** - Automating Google Sheets and Google Drive operations via service accounts and APIs for real-time reporting
+- **Rule-Based Decision Engines** - Designing configurable rule engines that encode business logic for automated record classification and routing
 
 ---
 
@@ -47,7 +47,7 @@ A desktop GUI application for splitting large CSV/Excel files into manageable pa
 
 An automated workflow engine that processes product listing review files through a configurable rule engine.
 
-**Business Problem:** Review analysts manually sort thousands of product listings per session — categorizing by source channel, checking reviewer assignments, flagging anomalies, and generating approval/return files. This took significant time and was prone to classification errors.
+**Business Problem:** Review analysts manually sort thousands of product listings per session, categorizing by source channel, checking reviewer assignments, flagging anomalies, and generating approval/return files. This took significant time and was prone to classification errors.
 
 **Solution:**
 - Rule engine architecture: business rules are defined as simple mask + output builder pairs, making them easy to add/modify without touching core logic
