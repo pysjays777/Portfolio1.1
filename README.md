@@ -1,135 +1,74 @@
-# Business Process Automation Portfolio
+Exit code: 0
+Wall time: 0.5 seconds
+Output:
+# Jayden Ho - Operations Automation & Applied AI Portfolio
 
-**Role:** Pricing Operations | Process Automation Specialist
+I turn repetitive, error-prone business processes into reliable tools, data pipelines, and AI-assisted workflows.
 
----
+My advantage is the combination of four years of e-commerce operations experience with hands-on delivery in Python, pandas, Google Workspace APIs, desktop tooling, full-stack applications, and production-minded AI orchestration.
 
-## About Me
+## Selected impact
 
-Operations professional with hands-on experience designing and building automation solutions that streamline business workflows. My work focuses on identifying repetitive, manual processes and transforming them into reliable, scalable automation tools, reducing processing time, minimizing human error, and freeing up teams to focus on higher-value analysis.
+- Reduced a key pricing workflow from **470 seconds to 52 seconds** (about **89% faster**).
+- Consolidated **7 separate Google Sheets scripts** into one mobile-triggered workflow.
+- Automated weekly reporting and removed about **2 hours of manual preparation per week**.
+- Built a cross-platform information assistant that reduced a **1-2 hour, five-step task to about 5 minutes**.
+- Managed **25+ concurrent pricing campaign sessions** while owning configuration, QA, validation, monitoring, and issue resolution.
 
-I bridge the gap between business requirements and technical implementation. While my primary role involves stakeholder communication, requirements gathering, and process mapping, I also develop working prototypes and production-ready automation scripts using Python and Google Workspace APIs.
+## What I build
 
----
+### Operations automation
 
-## Core Competencies
+Python and pandas processors for high-volume CSV/Excel workflows, configurable rule engines, safe file handling, audit trails, desktop GUIs, and Google Sheets integration.
 
-- **Process Analysis & Optimization** - Mapping end-to-end business workflows, identifying bottlenecks, and designing automation strategies
-- **Data Wrangling & Transformation** - Processing large-scale CSV/Excel datasets with pandas, handling data quality issues, and building validation pipelines
-- **Desktop Tool Development** - Building user-friendly GUI applications (Tkinter) so non-technical team members can run automation independently
-- **Google Workspace Integration** - Automating Google Sheets and Google Drive operations via service accounts and APIs for real-time reporting
-- **Rule-Based Decision Engines** - Designing configurable rule engines that encode business logic for automated record classification and routing
+### Data and KPI pipelines
 
----
+Scheduled extraction from Google Drive and Google Sheets, deterministic cleaning and aggregation, dashboard-ready outputs, structured logging, and GitHub Actions scheduling.
 
-## Projects
+### Full-stack products
 
-### 1. CSV Split Tool
-**`projects/csv_split_tool.py`**
+Python APIs, React/Vite interfaces, SQLite or Postgres persistence, authentication, deployment configuration, monitoring, and tests.
 
-A desktop GUI application for splitting large CSV/Excel files into manageable parts with configurable row limits.
+### Applied AI workflows
 
-**Business Problem:** Operations teams regularly receive data exports containing millions of rows. Downstream systems have upload limits (e.g., 950,000 rows per file), requiring manual splitting, a tedious and error-prone process.
+LangGraph orchestration, structured generation, evaluator and retry loops, human-review boundaries, QA/risk checks, prompt management, and Langfuse tracing.
 
-**Solution:**
-- GUI-based tool with file browsing, column selection, and pattern-based file discovery
-- Automatic splitting into parts at configurable row thresholds
-- Flexible header renaming: keep original, replace spaces with underscores, or apply custom JSON mappings
-- Supports CSV, TXT, and Excel formats
-- Generates per-file and global summary JSONs for audit trail
+## Representative projects
 
-**Tech Stack:** Python, pandas, Tkinter
+| Project | Problem solved | Technical evidence |
+|---|---|---|
+| Review workflow automation | Classifies large operational files and generates approval, return, anomaly, and audit outputs | Python, pandas, rule-engine design, Tkinter, validation, logging |
+| KPI dashboard pipeline | Replaces repeated manual KPI preparation with scheduled, auditable refreshes | Python, Google Drive/Sheets APIs, GitHub Actions, ETL, structured logs |
+| Paper crypto research platform | Provides paper trading, backtesting, strategy qualification, risk controls, and a dashboard without enabling real-money execution | Python API, React/Vite, SQLite, Bybit market data, Docker, Render/Cloudflare |
+| AI content review workflow | Converts queued source material into evaluated drafts with human approval and safety boundaries | LangGraph, OpenAI API, FastAPI, Postgres, Vercel/Render, Langfuse |
+| Job-search automation | Discovers and ranks jobs, drafts tailored documents, emails digests, and supports controlled autofill that stops before submission | Python package, SQLite, Apify, OpenAI, SMTP, Playwright |
 
----
+Detailed case studies are in [PROJECTS.md](PROJECTS.md). A chronological summary is in [YEAR-IN-REVIEW.md](YEAR-IN-REVIEW.md).
 
-### 2. Review Workflow Automation
-**`projects/review_workflow_automation.py`**
+## Core capabilities
 
-An automated workflow engine that processes product listing review files through a configurable rule engine.
+- Business process mapping and root-cause analysis
+- Python automation, pandas data transformation, and ETL
+- Google Sheets, Google Drive API, gspread, and service-account authentication
+- Workflow orchestration, evaluation loops, and human-in-the-loop AI systems
+- FastAPI-style backend services, React/Vite frontends, SQLite/Postgres
+- GitHub Actions, Docker, Render, Vercel, Cloudflare Pages, and structured observability
+- Stakeholder communication across operations, product, and commercial teams
 
-**Business Problem:** Review analysts manually sort thousands of product listings per session, categorizing by source channel, checking reviewer assignments, flagging anomalies, and generating approval/return files. This took significant time and was prone to classification errors.
+## Best-fit roles
 
-**Solution:**
-- Rule engine architecture: business rules are defined as simple mask + output builder pairs, making them easy to add/modify without touching core logic
-- Automatic categorization by entry source (Vendor vs Direct channels)
-- Anomaly detection for records with missing or unexpected account assignments
-- Auto-generates structured output files: approval lists, return-for-review lists, external case reports, and anomaly logs
-- Session-based output organization with processed file archiving
+- Operations Automation Engineer / Specialist
+- Business Systems or Process Automation Analyst
+- Data Automation Engineer / Analytics Engineer (operations-focused)
+- Applied AI Workflow Engineer / AI Operations Specialist
+- Technical Business Analyst for automation and internal tools
 
-**Tech Stack:** Python, pandas, dataclasses
+## About me
 
----
+Based in Kuala Lumpur. Fluent in English, Chinese, and Cantonese; conversational Malay; JLPT N2 Japanese.
 
-### 3. Data Processor (GUI + Core Engine)
-**`projects/data_processor_gui.py`** | **`projects/processor_core.py`**
+GitHub: [pysjays777](https://github.com/pysjays777)  
+Email: haojie.ho726@gmail.com
 
-A two-component system: a core processing engine and a desktop GUI wrapper for batch CSV processing.
+> Public-safe portfolio: proprietary company code, credentials, internal identifiers, and private operational data are intentionally excluded.
 
-**Business Problem:** Analysts needed to classify thousands of records daily based on pricing thresholds, separating items that require manual review from those eligible for auto-approval. The manual process involved opening each file, applying filters, copying data, and creating separate output files.
-
-**Solution:**
-- Core engine reads CSV files, applies pricing threshold logic, and splits records into review-required vs auto-approved categories
-- Desktop GUI provides a simple interface for non-technical users: browse folders, click Run, view real-time logs
-- Threaded execution keeps the UI responsive during processing
-- Batch output organization with timestamped folders
-- Automatic archiving of processed inputs to prevent duplicate processing
-- Optional Google Sheets integration for centralized audit logging
-- ASCII grid summary table printed after each batch for quick verification
-
-**Tech Stack:** Python, pandas, Tkinter, Google Sheets API (gspread)
-
----
-
-### 4. Google Sheets Dashboard Aggregator
-**`projects/gsheets_dashboard_aggregator.py`**
-
-An automated reporting tool that aggregates data from multiple Google Sheets across a shared Drive folder into a centralized dashboard.
-
-**Business Problem:** Team leads maintained individual tracking spreadsheets in a shared Google Drive folder. Generating monthly summaries required manually opening each spreadsheet, copying data, and consolidating, a process that took hours and was frequently out of date.
-
-**Solution:**
-- Automatically discovers and reads all Google Sheets in a specified Drive folder
-- Flexible header matching with alias support (handles spacing/casing variations across different team members' sheets)
-- Smart date parsing for date fields without year information, with worksheet-title fallback
-- Generates four dashboard tabs:
-  - **Monthly Summary** - Request volume and approval rates by month
-  - **Reason Summary** - Breakdown of request reasons with approval metrics
-  - **Reason by Month** - Cross-tabulation for trend analysis
-  - **Data Quality Issues** - Automatic logging of parsing errors for data stewardship
-- Retry logic with exponential backoff for API resilience
-- Writes results back to a designated Dashboard spreadsheet automatically
-
-**Tech Stack:** Python, pandas, gspread, Google Drive API, Google Sheets API
-
----
-
-## Technical Approach
-
-My automation philosophy centers on a few principles:
-
-1. **Configuration over code changes** - Business rules, column mappings, and thresholds are defined in dataclasses and config objects, not hardcoded. This means analysts can adjust parameters without modifying logic.
-
-2. **GUI for accessibility** - Every automation that is used by non-technical team members gets a Tkinter GUI. Complexity is hidden behind simple Browse/Run interfaces.
-
-3. **Audit trail by default** - Every processing run generates summary files (JSON or CSV), timestamps outputs, and archives inputs. This supports compliance and makes troubleshooting straightforward.
-
-4. **Fail gracefully** - Files that fail processing are moved to separate error directories rather than blocking the entire batch. Data quality issues are logged, not silently dropped.
-
----
-
-## Tech Stack Summary
-
-| Category | Tools |
-|---|---|
-| Language | Python 3.10+ |
-| Data Processing | pandas |
-| GUI Framework | Tkinter |
-| Cloud Integration | Google Sheets API, Google Drive API, gspread |
-| Authentication | Google Service Accounts (OAuth2) |
-| Architecture | Dataclass-based config, Rule engine pattern |
-
----
-
-## Contact
-
-Feel free to explore the code in the `projects/` directory. Each file is self-contained with docstrings explaining the business context and technical approach.
